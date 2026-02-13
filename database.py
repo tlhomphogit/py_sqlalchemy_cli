@@ -24,5 +24,3 @@ SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 # Create the Base Class
 Base = declarative_base()
-
-# -- Remove me too
