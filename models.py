@@ -43,5 +43,5 @@ class Booking(Base):
 
     # Relationships
     slot = relationship('Slot', back_populates='booking')
-    student = relationship('Users', back_populates='bookings')
+    student = relationship('User', back_populates='bookings')
 
