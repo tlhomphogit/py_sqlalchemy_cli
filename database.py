@@ -6,7 +6,7 @@ engine: The actual physical connection to the bookings.db file.
 
 SessionLocal: The tool to start a conversation with the database.
 
-Base: The foundation the tables.
+Base: The foundation of the tables.
 
 '''
 
@@ -20,9 +20,11 @@ engine = create_engine(
 )
 
 # 3. Create the Session Factory
-SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+SessionLocal = sessionmaker(
+    autocommit=False, 
+    autoflush=False, 
+    bind=engine
+)
 
 # Create the Base Class
 Base = declarative_base()
-
-# --remove me
