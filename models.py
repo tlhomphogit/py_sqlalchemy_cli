@@ -44,4 +44,10 @@ class Booking(Base):
     # Relationships
     slot = relationship('Slot', back_populates='booking')
     student = relationship('User', back_populates='bookings')
+    
+# # 4. The Admin Table
+# class Admin(Base):   ----- Implement this once the main geatures are done 
+#     pass
+
+
 

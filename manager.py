@@ -39,5 +39,7 @@ def get_user_by_email(email: str):
     db.close()
     return user
 
+# print(add_user(args.username, ...))
+
 if __name__ == '__main__':
     init_db()
